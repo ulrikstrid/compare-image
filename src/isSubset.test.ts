@@ -10,8 +10,12 @@ test("same image is subset", () => {
 test("larger image is not a subset", () => {
   const a = new ImageData(10, 10);
   const b = new ImageData(20, 20);
+  const c = new ImageData(5, 20);
+  const d = new ImageData(20, 5);
 
   expect(isSubset(a, b)).toBe(false);
+  expect(isSubset(a, c)).toBe(false);
+  expect(isSubset(a, d)).toBe(false);
 });
 
 test("a real subset should be a subset", () => {
