@@ -4,7 +4,7 @@ A small library to compare ImageData objects.
 
 ## Install
 
-`npm install compare-image`
+`npm install compare-image-data`
 
 ## API
 
@@ -21,7 +21,7 @@ isSubset(imageData: ImageData, subset: ImageData): boolean
 ## Example
 
 ```ts
-import * as compareImage from 'compare-image'
+import * as compareImage from 'compare-image-data'
 
 const imageDataA = new ImageData(10, 10);
 const imageDataB = new ImageData(10, 10);
