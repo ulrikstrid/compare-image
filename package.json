@@ -1,0 +1,40 @@
+{
+  "name": "compare-image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "ImageData",
+    "compare"
+  ],
+  "author": "Ulrik Strid (ulrik.strid@outlook.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^19.2.4",
+    "@types/node": "^7.0.29",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "tslint": "^5.4.3",
+    "tslint-config-prettier": "^1.1.0",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.3.4"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/setupTest.js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/src/.*\\.(test))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
